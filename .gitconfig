@@ -1,0 +1,10 @@
+[user]
+	name = Sam Allgaier
+	email = 48078810+smallgaier25@users.noreply.github.com
+[core]
+	excludesfile = /Users/sam/.gitignore
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
