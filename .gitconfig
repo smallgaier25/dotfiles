@@ -1,10 +1,20 @@
 [user]
-	name = Sam Allgaier
-	email = 48078810+smallgaier25@users.noreply.github.com
+	# Populate in ~/.gitconfig.local
+[init]
+	defaultBranch = main
+[alias]
+	l = log --oneline
+	ln = log --oneline -n
+	wd = diff --word-diff=color --word-diff-regex=[a-zA-Z0-9]+|[^[:space:]]
+	cd = diff --word-diff=color --word-diff-regex=.
 [core]
-	excludesfile = /Users/sam/.gitignore
+	excludesfile = ~/.gitignore
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[include]
+	path = ~/.gitconfig.local
+

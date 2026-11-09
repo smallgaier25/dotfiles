@@ -27,3 +27,4 @@ syntax on " syntax highlighting on
 " stay in command mode after inserting newline
 "nnoremap o o<esc>
 "nnoremap O O<esc>
+
